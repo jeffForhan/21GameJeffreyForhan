@@ -1,30 +1,32 @@
 Class Player
+
 	Instance variables:
 		int cardNum - The card’s number that corresponds to its the numbered cards 1-9, and the face cards jack, queen, and king
 		int score - The total value of the player’s cards
 		Random randy- Random object that is used to generate the card number
+	
 	Methods
 		Player() 
-- A constructor. 
-Gives the card a starting number number
--pre: none
--post: card gets a number
-Public void setValue()
-	-Gets a new card number, finds its value, and adds it to the current value
-	-pre: player selects to reset value
-	-post: new value is added to the score
+			- A constructor. 
+			-Gives the card a starting number number
+			-pre: none
+			-post: card gets a number
+		Public void setValue()
+			-Gets a new card number, finds its value, and adds it to the current value
+			-pre: player selects to reset value
+			-post: new value is added to the score
 		public void drawCard()
--Gives the card a new number
+			-Gives the card a new number
 			-pre: player selects to reset value
 			-post: the card value is set to a new number
 		Public void makeMove()
 			-pre: none
 			-post: creates a menu
 		Public int getValue()
-			Gets the card value
-			Pre: none 
-			Post: returns the current card value
+			-Gets the card value
+			-Pre: none 
+			-Post: returns the current card value
 		Public int compareTo(Object obj)
-			Compares the scores of the player and the computer
-			Pre: players decides to play
-			Post: player’s card value is compared to the computer’s
+			-Compares the scores of the player and the computer
+			-Pre: players decides to play
+			-Post: player’s card value is compared to the computer’s
