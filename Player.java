@@ -27,8 +27,8 @@ public class Player {
         drawCard();
     }
     /**
-     * description:
-     * pre: Player selects to pick a new
+     * description: Adds to the player's score
+     * pre: none
      * post: Adds new card to the player's hand
      */
     public void drawCard(){
@@ -36,9 +36,9 @@ public class Player {
         cardNum = randy.nextInt(13)+1;
     }
     /**
-     * description:
-     * pre:
-     * post:
+     * description: Alter score based on the card drawn
+     * pre: player chooses to draw new card
+     * post: Add score of new card to old score
      */
     public void setValue(){
         
@@ -57,18 +57,18 @@ public class Player {
         }
     }    
     /**
-     * description:
-     * pre:
-     * post:
+     * description: Shows the player's current score
+     * pre: player asks to see score
+     * post: Display player score
      * @return the player's current score
      */
     public int getValue(){
         return score;
     }
     /**
-     * description: 
-     * pre:
-     * post:
+     * description: Checks if the computer or the player wins
+     * pre: The player submits score
+     * post: Compare the scores
      * @param obj the object that this object is being compared to
      * @return 1(this player has a higher score), -1(other player has a higher score), 0(both scores are the same)
      */
